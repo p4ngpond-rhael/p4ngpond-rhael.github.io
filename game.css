@@ -1,0 +1,148 @@
+.next-btn{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 16rem;
+    text-align: center;
+    border: 0.5rem solid #5e56eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #5e56eb;
+    background-color: white;
+    border-radius: 3rem; 
+    display: block; /* Ensure the button behaves as a block element */
+    margin-left: auto; /* Push left margin to max */
+    margin-right: auto; /* Push right margin to max, effectively centering */
+
+    transition: 
+        transform 200ms ease-in-out,       /* For translateY */
+        font-size 200ms ease-in-out,       /* For font-size change */
+        box-shadow 200ms ease-in-out,      /* For box-shadow */
+        background-color 200ms ease-in-out;      
+}
+
+.next-btn:hover{
+    cursor: pointer;
+    font-size: 1.9rem;
+    background-color: #f1ecff;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(75, 63, 180, 0.5);
+    transform: translateY(-0.1rem);
+}
+
+.next-btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.exp-btn{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 100rem;
+    text-align: center;
+    border: 0.5rem solid #56eb65;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #0fab4b;
+    background-color: white;
+    border-radius: 3rem; 
+    display: block; /* Ensure the button behaves as a block element */
+    margin-left: auto; /* Push left margin to max */
+    margin-right: auto; /* Push right margin to max, effectively centering */
+
+    transition: 
+        transform 200ms ease-in-out,       /* For translateY */
+        font-size 200ms ease-in-out,       /* For font-size change */
+        box-shadow 200ms ease-in-out,      /* For box-shadow */
+        background-color 200ms ease-in-out;
+}
+
+.exp-btn:hover{
+    cursor: pointer;
+    font-size: 1.9rem;
+    background-color: #edffee;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(59, 255, 85, 0.7);
+    transform: translateY(-0.1rem);
+}
+
+.exp-btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.exp-box {
+    max-height: 0;
+    overflow: hidden;
+    background: #f8fff0;
+    border: 1px solid #b6e6b6;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    padding: 0 1.5rem;
+    font-size: 3rem;
+    color: #1a4d1a;
+    box-shadow: 0 0.2rem 0.8rem 0 rgba(59, 255, 85, 0.15);
+    transition: max-height 0.5s linear;
+}
+
+/* Add this class with JS when showing the box */
+.exp-box.show {
+    max-height: 50rem; /* Large enough to fit most content */
+    transition: max-height 0.5s linear;
+}
+
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0.7);
+    background-color: white;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix{
+    padding: 1.5rem 2.5rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0.5);
+    background-color: #56a5eb;
+    color: white;
+}
+
+.choice-text{
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct{
+    background-color: #beffce;
+}
+
+.incorrect{
+    background-color: #eab6bb;
+}
+
+.answer{
+    background-color: #f8fab7;
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text{
+    text-align: center;
+}
